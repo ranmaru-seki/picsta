@@ -1,0 +1,54 @@
+.UserEdit-wrapper
+  .UserEdit-Contents
+    %h2.UserEdit__title
+      ユーザー情報変更
+    = form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f|
+      = render "devise/shared/error_messages", resource: resource
+      .UserEdit__field
+        = f.label :名前, class: "UserEdit__field--label"
+        %br/
+        = f.text_field :name, autofocus: true, autocomplete: "name", class: "UserEdit__field--input"
+      .UserEdit__field
+        = f.label :プロフィール, class: "UserEdit__field--label"
+        %br/
+        = f.text_area :profile, autofocus: true, autocomplete: "profile", class: "UserEdit__field--input"
+      .UserEdit__field
+        = f.label :プロフィール画像, class: "UserEdit__field--label"
+        %br/
+        = f.file_field :image, autofocus: true, autocomplete: "image", class: "UserEdit__field--input"
+      .UserEdit__field
+        = f.label :メールアドレス, class: "UserEdit__field--label"
+        %br/
+        = f.email_field :email, autofocus: true, autocomplete: "email", class: "UserEdit__field--input"
+      - if devise_mapping.confirmable? && resource.pending_reconfirmation?
+        %div
+          Currently waiting confirmation for: #{resource.unconfirmed_email}
+      .UserEdit__field
+        = f.label :新しいパスワードを入力して下さい。, class: "UserEdit__field--label"
+        %br/
+        %i (変更しない場合は空欄にして下さい)
+        %br/
+        = f.password_field :password, autocomplete: "new-password", class: "UserEdit__field--input"
+        - if @minimum_password_length
+          %br/
+          %em
+            = @minimum_password_length
+            characters minimum
+      .UserEdit__field
+        = f.label :もう一度新しいパスワードを入力して下さい。, class: "UserEdit__field--label"
+        %br/
+        = f.password_field :password_confirmation, autocomplete: "new-password", class: "UserEdit__field--input"
+      .UserEdit__field
+        = f.label :変更を適用するため、現在のパスワードを入力して下さい。, class: "UserEdit__field--label"
+        %br/
+        = f.password_field :current_password, autocomplete: "current-password", class: "UserEdit__field--input"
+      .actions
+        = f.submit "Update", class: "UserEdit__submitBtn"
+
+    = link_to "ログアウト", destroy_user_session_path, method: :delete, class: 'Button'
+    = link_to "トップページに戻る", :back, class: 'Button'
+
+    %h3.UserDelete アカウント削除はこちらから
+    %p
+      #{button_to "⚠︎アカウントを削除", registration_path(resource_name), data: { confirm: "本当にアカウントを削除してもいいですか?" }, method: :delete}
+    = link_to "Back", :back, class: "UserEdit__backBtn"

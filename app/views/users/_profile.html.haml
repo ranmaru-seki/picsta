@@ -1,0 +1,18 @@
+.User
+  .User__logo
+    = link_to "Picstagram", root_path, class: 'User__logo--link'
+  .User__image
+    = image_tag @user.image.url, class: "User__image--pic"
+  .User__name
+    = @user.name
+  .User__profile
+    = @user.profile
+  .User__icons
+    = link_to new_post_path, class: "User__icons--post" do
+      = icon('far', 'images')
+      %span<>
+    = link_to "#", class: 'User__icons--like' do
+      = icon('fas', 'heart')
+      %span<>
+    = link_to edit_user_registration_path, class: 'User__icons--cog' do
+      = icon('fas', 'cog')

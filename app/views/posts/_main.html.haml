@@ -1,0 +1,23 @@
+.Main
+  .MainContents
+    - @posts.each do |post|
+      .Post
+        .Post__user
+          = link_to (image_tag post.user.image.url, class: "Post__user--image"), user_path(post.user)
+          = link_to post.user.name, user_path(post.user), class: "Post__user--name"
+        = link_to (image_tag post.image.url, class: "Post__pic"), post_path(post)
+        .Post__icon
+          = link_to "#", class: "Post__icon--like" do
+            = icon('far', 'heart')
+            %span<>
+          .Like-num
+            3
+          = link_to post_path(post), class: "Post__icon--comment" do
+            = icon('far', 'comment')
+          .Comment-num
+            = post.comments.size
+        .Post__text
+          = link_to user_path(post.user), class: "Comment__user" do
+            = post.user.name
+          .Comment__contents
+            = post.contents

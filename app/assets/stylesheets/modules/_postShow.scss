@@ -1,0 +1,123 @@
+.PostUserShow-image {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.PostUserShow-name {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+  bottom: 5px;
+}
+
+.CommentUserShow-image {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.CommentUserShow-name {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  position: relative;
+  bottom: 5px;
+}
+
+
+.PostShow {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  padding-left: 100px;
+  .PostPic {
+    width: 65%;
+    margin: auto;
+    &__image {
+      margin: auto;
+      width: 100%;
+    }
+  }
+  .PostInfo {
+    width: 35%;
+    margin: auto;
+    padding: 0 30px;
+    &__user {
+      padding-bottom: 5px;
+      border-bottom: 1px solid #C0C0C0;
+      &--image {
+      }
+      &--name {
+      }
+    }
+    &__myComments {
+      padding-top: 10px;
+      margin-bottom: 10px;
+      &--image {
+      }
+      &--name {
+      }
+    }
+    &__yourComments {
+      overflow: scroll;
+      height: 30vh;
+      border-bottom: 1px solid #C0C0C0;
+      margin-bottom: 10px;
+      padding: 10px;
+      .PostInfo__yourComments-wrapper {
+        margin-bottom: 10px;
+        .PostInfo__yourComments--contents {
+          .OwnComment {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    &__likes {
+      margin-bottom: 10px;
+        &--icon {
+        color: red;
+        margin-right: 3px;
+      }
+    }
+    &__likeUser {
+      padding: 0 10px;
+      height: 8vh;
+      overflow: scroll;
+      margin-bottom: 5px;
+      border-bottom: 1px solid #C0C0C0;
+    }
+    &__input {
+      margin-top: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #C0C0C0;
+      .PostInfo__contents {
+        display: flex;
+
+        &--area {
+          padding: 5px;
+          margin-right: 10px;
+          width: 80%;
+        }
+        &--btn {
+          color: #A9A9A9;
+          border: 1px solid #C0C0C0;
+          border-radius: 3px;
+          padding: 3px 5px;
+          background-color: #F5F5F5;
+          transition: 0.2s;
+        }
+        &--btn:hover {
+          color: black;
+          background-color: #A9A9A9;
+          transition: 0.2s;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.Posts
+  - if @count != 0
+    - @posts.each do |post|
+      .Pic
+        = link_to (image_tag post.image.url, class: "Pic__image"), post_path(post)
+  - else
+    %p.NoPost まだ投稿はありません

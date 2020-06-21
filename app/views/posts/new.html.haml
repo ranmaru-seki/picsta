@@ -1,0 +1,10 @@
+.New
+  .New__container
+    = form_with model: @post, local: true do |f|
+      .NewContents
+        = f.text_area :contents, class: 'NewContents__input', placeholder: 'コメントを入力'
+      .NewImage
+        = f.file_field :image, class: 'NewImage__input'
+
+      .NewSubmit
+        = f.submit "投稿する", class: 'NewSubmit__btn'

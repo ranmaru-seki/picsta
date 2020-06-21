@@ -1,0 +1,64 @@
+
+
+.UserEdit-wrapper {
+  margin: 30px;
+}
+.UserEdit-Contents {
+  text-align: center;
+  .UserEdit__title {
+    margin-bottom: 40px;
+    font-size: 30px;
+    .field {
+      margin: 20px;
+    }
+  }
+  .UserEdit__field {
+    margin-bottom: 20px;
+  }
+  .UserEdit__field--label {
+    margin-bottom: 10px;
+  }
+  .UserEdit__field--input {
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px 10px;
+  }
+}
+
+.UserEdit__submitBtn {
+  padding: 5px 10px;
+  border: 1px solid #A9A9A9;
+  border-radius: 3px;
+  background-color: #DCDCDC;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+}
+
+.Button {
+  text-decoration: none;
+  color: black;
+  padding: 5px 10px;
+  background-color: #DCDCDC;
+  border: 1px solid #A9A9A9;
+  border-radius: 3px;
+}
+
+.UserDelete {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  color: red;
+}
+
+.UserDelete__btn {
+  color: black;
+  padding: 5px 10px;
+  background-color: #DCDCDC;
+  border: 1px solid #A9A9A9;
+  border-radius: 3px;
+}
+
+.UserEdit__backBtn {
+  display: block;
+  margin-top: 20px;
+}
