@@ -1,39 +1,8 @@
-.PostUserShow-image {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.PostUserShow-name {
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
-  position: relative;
-  bottom: 5px;
-}
-
-.CommentUserShow-image {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  object-fit: cover;
-}
-
-.CommentUserShow-name {
-  color: black;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 14px;
-  position: relative;
-  bottom: 5px;
-}
-
 
 .PostShow {
   display: flex;
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 70px);
   padding-left: 100px;
   .PostPic {
     width: 65%;
@@ -41,6 +10,14 @@
     &__image {
       margin: auto;
       width: 100%;
+    }
+    &__trash {
+      color: black;
+      font-size: 20px;
+      opacity:0.6;
+    }
+    &__trash:hover{
+      opacity:1;
     }
   }
   .PostInfo {
@@ -71,18 +48,23 @@
       padding: 10px;
       .PostInfo__yourComments-wrapper {
         margin-bottom: 10px;
-        .PostInfo__yourComments--contents {
-          .OwnComment {
-            cursor: pointer;
-          }
+        .PostInfo__yourComments--name {
+          margin: auto;
         }
       }
     }
     &__likes {
       margin-bottom: 10px;
-        &--icon {
+      &--blackIcon {
+      color: black;
+      margin-right: 3px;
+      }
+      &--redIcon {
         color: red;
         margin-right: 3px;
+      }
+      &--size {
+        display: inline;
       }
     }
     &__likeUser {

@@ -1,74 +1,7 @@
 * {
   box-sizing: border-box;
 }
-.Top {
-  width: 100vw;
-  background-color: #f5f5f5;
-  padding: 0 130px;
-  border-bottom: 1px solid #c0c0c0;
-  .topContents {
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    &__logo {
-      font-size: 30px;
-      color: #0080ff;
-      font-family: 'M PLUS Rounded 1c', sans-serif;
-      font-weight: bolder;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-    &__logo:hover {
-      color: #0001ff;
-      transition: 0.3s;
-    }
-    &__search {
-      position: relative;
-      left: 250px;
-      Input[type="text"] {
-        box-sizing: border-box;
-        width: 300px;
-        height: 40px;
-        padding: 0 15px;
-        border: 1px solid #808080;
-        border-radius: 5px;
-        margin-right: 10px;
-      }
-      .Form {
-        display: flex;
-        align-items: center;
-        &____inputName {
-        }
-        &__submit {
-          color: #808080;
-          font-size: 25px;
-        }
-        &__submit:hover {
-          color: #0080ff;
-          transition: 0.3s;
-        }
-      }
-    }
-    &__userInfo {
-      color: black;
-      position: relative;
-      top: 3px;
-      &--image {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        object-fit: cover;
-        opacity: 0.8;
-        transition: 0.3s;
-      }
-      &--image:hover {
-        transition: 0.3s;
-        opacity: 1;
-      }
-    }
-  }
-}
+
 
 
 .Main {
@@ -114,27 +47,29 @@
       &__icon {
         display: flex;
         padding: 0 10px;
-        &--like {
+        &--redlike {
+          margin-right: 5px;
+          color: red;
+          font-size: 25px;
+        }
+        &--blacklike {
           margin-right: 5px;
           color: black;
           font-size: 25px;
         }
-        &--like:hover{
-          opacity: 0.4;
+        &--size {
+          display: inline;
+          position: relative;
+          bottom: 9px;
         }
-        .Like-num {
-          color: #808080;
-        }
+
+
         &--comment {
           margin-left: 15px;
           color: black;
           font-size: 25px;
         }
-        &--comment:hover{
-          opacity: 0.4;
-        }
         .Comment-num {
-          color: #808080;
           margin-left: 5px;
         }
       }
@@ -148,6 +83,13 @@
           font-size: 16px;
           font-weight: bold;
           margin: auto;
+        }
+        .Comment__user:hover {
+          opacity: 0.5;
+        }
+        .Post__created_at {
+          font-size: 12px;
+          margin-top: 10px;
         }
         .Comment__contents {
           font-size: 15px;

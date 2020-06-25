@@ -68,6 +68,11 @@
         font-size: 35px;
       }
     }
+    .OtherUser__icons {
+      padding: 0 10px;
+      display: flex;
+      justify-content: center;
+    }
   }
   .Posts{
     height: 100vh;
@@ -99,6 +104,10 @@
       &__image:hover {
         opacity: 0.5;
         transition: 0.2s;
+        display: block;
+        &--delete:hover {
+          display: block;
+        }
       }
     }
     p {

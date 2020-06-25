@@ -7,12 +7,18 @@
     = @user.name
   .User__profile
     = @user.profile
-  .User__icons
-    = link_to new_post_path, class: "User__icons--post" do
-      = icon('far', 'images')
-      %span<>
-    = link_to "#", class: 'User__icons--like' do
-      = icon('fas', 'heart')
-      %span<>
-    = link_to edit_user_registration_path, class: 'User__icons--cog' do
-      = icon('fas', 'cog')
+  - if current_user.id == @user.id
+    .User__icons
+      = link_to new_post_path, class: "User__icons--post", "data-toggle" => "tooltip", "data-placement" => "bottom", :title => "新規投稿" do
+        = icon('far', 'images')
+        %span<>
+      = link_to likesDisplay_user_path(@user), class: 'User__icons--like', "data-toggle" => "tooltip", "data-placement" => "bottom", :title => "イイネした投稿" do
+        = icon('fas', 'heart')
+        %span<>
+      = link_to edit_user_registration_path, class: 'User__icons--cog', "data-toggle" => "tooltip", "data-placement" => "bottom", :title => "アカウント設定" do
+        = icon('fas', 'cog')
+  - else
+    .OtherUser__icons
+      = link_to likesDisplay_user_path(@user), class: 'User__icons--like', "data-toggle" => "tooltip", "data-placement" => "bottom", :title => "イイネした投稿" do
+        = icon('fas', 'heart')
+        %span<>

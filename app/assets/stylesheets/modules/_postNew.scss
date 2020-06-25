@@ -1,0 +1,32 @@
+.New {
+  .New__container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    .NewContents {
+      margin-top: 70px;
+      &__input {
+        border: 1px solid #A9A9A9;
+        border-radius: 3px;
+        width: 30%;
+        padding: 5px 10px;
+      }
+    }
+    .NewImage {
+      margin-top: 30px;
+    }
+    .NewSubmit {
+        margin-top: 50px;
+        &__btn {
+          background-color: #DCDCDC;
+          padding: 5px 10px;
+          border: 1px solid #A9A9A9;
+          border-radius: 3px;
+        }
+        &__btn:hover {
+          background-color: #A9A9A9;
+        }
+    }
+  }
+}

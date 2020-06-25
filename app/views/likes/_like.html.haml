@@ -1,0 +1,15 @@
+- if user_signed_in?
+  - if post.liked_by?(current_user)
+    = link_to post_like_path(post, current_user), class: "Post__icon--redlike", method: :delete, remote: true do
+      = icon('fas', 'heart')
+      %span<>
+    .Post__icon--size
+      = post.likes.size
+  - else
+    = link_to post_likes_path(post), class: "Post__icon--blacklike", method: :post, remote: true do
+      = icon('far', 'heart')
+      %span<>
+    .Post__icon--size
+      = post.likes.size
+- else
+  %p ♡

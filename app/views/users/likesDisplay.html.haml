@@ -1,0 +1,9 @@
+= render "/posts/top"
+.likedPosts-wrapper
+  .LikedPosts
+    - if @user.likes.size != 0
+      - @user.likes.each do |like|
+        .LikedPic
+          = link_to (image_tag like.post.image.url, class: "LikedPic__image"), post_path(like.post)
+    - else
+      %p.NoPost まだいいねがありません。

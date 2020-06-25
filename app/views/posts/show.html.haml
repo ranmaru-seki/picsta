@@ -1,6 +1,21 @@
+= render "top"
 .PostShow
   .PostPic
     = image_tag @post.image.url, class: "PostPic__image"
+    - if current_user.id == @post.user.id
+      = link_to "#", class: "PostPic__trash", "data-toggle" => "tooltip", "data-placement" => "bottom", :title => "投稿を削除" do
+        = icon('fas', 'trash-alt')
+
+  #postShow-overlay
+  #postShow-modalWindow
+    %p.confirm-text 本当に画像を削除しますか？
+    = link_to post_path, method: :delete, class: "modal-PostPic__trash" do
+      = icon('fas', 'trash-alt')
+      %span<>
+    = link_to "#", class: "modal-PostPic__back" do
+      = icon('fas', 'undo-alt')
+
+
   .PostInfo
     .PostInfo__user
       = link_to (image_tag @post.user.image.url, class: "PostInfo__user--image PostUserShow-image"), user_path(@post.user)
@@ -13,30 +28,22 @@
     .PostInfo__yourComments
       - @comments.each do |comment|
         .PostInfo__yourComments-wrapper
-          = link_to (image_tag comment.user.image.url, class: "PostInfo__yourComments--image CommentUserShow-image"), user_path(comment.user)
-          = link_to user_path(comment.user), class: "PostInfo__yourComments--name CommentUserShow-name" do
+          = link_to (image_tag comment.user.image.url, class: "PostInfo__yourComments--image UserInfoShow-image"), user_path(comment.user)
+          = link_to user_path(comment.user), class: "PostInfo__yourComments--name UserInfoShow-name" do
             = comment.user.name
 
           .PostInfo__yourComments--contents
-            - if current_user.id == comment.user.id
-              %span.OwnComment
-                = comment.content
-            - else
-              %span
-                = comment.content
+            = comment.content
 
     .PostInfo__likes
-      = link_to "#", class: 'PostInfo__likes--icon' do
-        = icon('fas', 'heart')
-        %span<>
-      3
+      %p ♡いいねしたユーザー：#{@post.likes.size}人
+
+
     .PostInfo__likeUser
-      %p らんまる
-      %p けん
-      %p ケビン
-      %p らんまる
-      %p けん
-      %p ケビン
+      - @likes.each do |like|
+        = link_to (image_tag like.user.image.url, class: "PostInfo__yourComments--image UserInfoShow-image"), user_path(like.user)
+        = link_to user_path(like.user), class: "PostInfo__yourComments--name UserInfoShow-name" do
+          = like.user.name
 
     .PostInfo__input
       = form_with model: [@post, @comment], html: {class: "Form"}, local: true do |f|

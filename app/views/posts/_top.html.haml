@@ -1,11 +1,15 @@
 .Top
   .topContents
-    = link_to "Picstagram", "#", class: 'topContents__logo'
+    = link_to "Picstagram", root_path, class: 'topContents__logo'
 
     .topContents__search
       = form_with class: "Form", local: true do |f|
-        = f.text_field :search, class: 'Form__inputName', placeholder: 'search by user name'
+        = f.text_field :keyword, class: 'Form__inputName', placeholder: 'search by user name'
         = button_tag type: 'submit', class: "Form__submit" do
           = icon('fas', 'search')
+        #overlay
+        #modalWindow
+          .modalWindow__result
+
     .topContents__userInfo
       = link_to (image_tag current_user.image.url, class: "topContents__userInfo--image"), user_path(current_user)

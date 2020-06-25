@@ -1,0 +1,47 @@
+.likedPosts-wrapper {
+  display: flex;
+  justify-content: center;
+  .LikedPosts{
+    height: 100vh;
+    width: calc(100vw - 400px);
+    height: calc(100vh - 70px);
+    background-color: #F5F5F5;
+    padding: 0 10px;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+    .LikedPic {
+      position: relative;
+      width: calc(100% / 3);
+      height: 0;
+      padding-top: calc(92% / 3);
+      border: 10px solid #F5F5F5;
+      &__image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        object-fit: cover;
+        transition: 0.2s;
+      }
+      &__image:hover {
+        opacity: 0.5;
+        transition: 0.2s;
+        display: block;
+        &--delete:hover {
+          display: block;
+        }
+      }
+    }
+    p {
+      margin-left: auto;
+      margin-right: auto;
+      color: gray;
+    }
+  }
+}

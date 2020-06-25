@@ -1,17 +1,14 @@
-%h2 Log in
-= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
-  .field
-    = f.label :email
-    %br/
-    = f.email_field :email, autofocus: true, autocomplete: "email"
-  .field
-    = f.label :password
-    %br/
-    = f.password_field :password, autocomplete: "current-password"
-  - if devise_mapping.rememberable?
+.SessionsNew
+  %h2 Log in
+  = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
     .field
-      = f.check_box :remember_me
-      = f.label :remember_me
-  .actions
-    = f.submit "Log in"
-= render "devise/shared/links"
+      = f.label :email, class: "sessionsNew__email--label"
+      %br/
+      = f.email_field :email, autofocus: true, autocomplete: "email", class: "sessionsNew__email--form"
+    .field
+      = f.label :password, class: "sessionsNew__password--label"
+      %br/
+      = f.password_field :password, autocomplete: "current-password", class: "sessionsNew__password--form"
+    .actions
+      = f.submit "Log in", class: "sessionsNew__submit--btn"
+  = render "devise/shared/links"
