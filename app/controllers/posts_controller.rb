@@ -1,7 +1,23 @@
 class PostsController < ApplicationController
 
   def index
-    @posts = Post.all.order("created_at DESC")
+    @user  = User.find_by(id: current_user.id)
+    @users = @user.followings
+    @posts = []
+    @users.each do |user|
+      posts = Post.where(user_id: user.id).order(created_at: :desc)
+      #取得したユーザーの投稿一覧を@postsに格納
+      @posts.concat(posts)
+    end
+    myposts = Post.where(user_id: current_user.id)
+    @posts.concat(myposts)
+    #@postsを新しい順に並べたい
+    @posts.sort_by!{|post| post.created_at}.reverse!
+    if @posts.nil?
+      flash[:notice]="まだ投稿がありません…"
+      redirect_to("/")
+    end
+
     @like = Like.new
   end
 

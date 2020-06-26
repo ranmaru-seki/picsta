@@ -1,6 +1,7 @@
 = render "topLogo"
 .New
   .New__container
+    %p.New__container--logo 新規投稿
     = form_with model: @post, local: true do |f|
       .NewContents
         = f.text_area :contents, class: 'NewContents__input', placeholder: 'コメントを入力'

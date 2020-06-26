@@ -51,6 +51,66 @@
   z-index: 2
 }
 
+
+#followings-overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0);
+  display: none;
+  z-index: 1
+ }
+
+#followings-modalWindow {
+  position: relative;
+  bottom: 37%;
+  left: 5%;
+  width: 300px;
+  height: 200px;
+  padding: 5px 20px;
+  margin-top: 110px;
+  text-align: left;
+  position: fixed;
+  border: 1px solid #C0C0C0;
+  border-radius: 5px;
+  overflow: scroll;
+  background-color: #FFF;
+  display: none;
+  z-index: 2
+}
+
+#followers-overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0);
+  display: none;
+  z-index: 1
+ }
+
+#followers-modalWindow {
+  position: relative;
+  bottom: 37%;
+  left: 10%;
+  width: 300px;
+  height: 200px;
+  padding: 5px 20px;
+  margin-top: 110px;
+  text-align: left;
+  position: fixed;
+  border: 1px solid #C0C0C0;
+  border-radius: 5px;
+  overflow: scroll;
+  background-color: #FFF;
+  display: none;
+  z-index: 2
+}
+
+
 .modal-PostPic__trash {
   margin: 0 40px;
 }
@@ -62,7 +122,6 @@
 .confirm-text {
   margin-bottom: 40px;
 }
-
 
 body {
   text-align: center;

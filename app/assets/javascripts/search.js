@@ -49,20 +49,6 @@ $(function() {
   $(".PostPic__trash").on('click', function(){
     $("#postShow-modalWindow").css('display', 'block');
     $("#postShow-overlay").css('display', 'block');
-    $(window).resize(modalResize);
-      function modalResize(){
-        var w = $(window).width();
-        var h = $(window).height();
-
-        var cw = $("#postShow-modalWindow").outerWidth();
-        var ch = $("#postShow-modalWindow").outerHeight();
-
-          //取得した値をcssに追加する
-        $("#postShow-modalWindow").css({
-          "left": ((w - cw)/2) + "px",
-          "top": ((h - ch)/2) + "px"
-        });
-      }
   })
 
   $("#overlay").on('click', function() {

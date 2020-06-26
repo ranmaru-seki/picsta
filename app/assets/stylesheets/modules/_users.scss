@@ -47,9 +47,33 @@
     &__profile {
       text-align: left;
       font-size: 20px;
-      margin-bottom: 60px;
+      margin-bottom: 30px;
       word-break: keep-all;
     }
+
+    &__numbers {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      &--followings {
+        color:black;
+        text-decoration: none;
+        padding: 3px 5px;
+      }
+      &--followings:hover{
+        opacity: 0.6;
+      }
+
+      &--followers {
+        color:black;
+        text-decoration: none;
+        padding: 3px 5px;
+      }
+      &--followers:hover{
+        opacity: 0.6;
+      }
+    }
+
     &__icons {
       padding: 0 10px;
       display: flex;

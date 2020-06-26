@@ -7,6 +7,43 @@
     = @user.name
   .User__profile
     = @user.profile
+
+  .User-followModal
+    #followings-overlay
+    #followings-modalWindow
+      - if @user.followings.size == 0
+        %p.title フォローしたい人を見つけましょう
+      - else
+        %p.title フォロー中
+        - @user.followings.each do |following|
+          .following__user
+            = link_to (image_tag following.image.url, class: "UserInfoShow-image--searched"), user_path(following)
+            = link_to following.name, user_path(following), class: "UserInfoShow-name--searched"
+
+    #followers-overlay
+    #followers-modalWindow
+      - if @user.followers.size == 0
+        %p.title フォロワーはまだいません。
+      - else
+        %p.title フォロワー
+        - @user.followers.each do |follower|
+          .following__user
+            = link_to (image_tag follower.image.url, class: "UserInfoShow-image--searched"), user_path(follower)
+            = link_to follower.name, user_path(follower), class: "UserInfoShow-name--searched"
+
+  = render "follow_button", user: @user
+  .User__numbers
+    = link_to "#", class: "User__numbers--followings" do
+      フォロー中
+      = @user.followings.size
+      人
+
+    = link_to "#", class: "User__numbers--followers" do
+      フォロワー
+      = @user.followers.size
+      人
+
+
   - if current_user.id == @user.id
     .User__icons
       = link_to new_post_path, class: "User__icons--post", "data-toggle" => "tooltip", "data-placement" => "bottom", :title => "新規投稿" do
