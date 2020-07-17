@@ -65,23 +65,23 @@ InstaCloneはインスタグラムのクローンアプリです。Ruby、Ruby o
 
 ## 特徴
 #### あなたのタイムラインには、あなたがフォローしているユーザーの投稿のみを表示します。
-[![Image from Gyazo](https://i.gyazo.com/a214d27dec20cf88535ca7197d097ce8.gif)](https://gyazo.com/a214d27dec20cf88535ca7197d097ce8)
+[![Image from Gyazo](https://i.gyazo.com/a214d27dec20cf88535ca7197d097ce8.gif)](https://gyazo.com/a214d27dec20cf88535ca7197d097ce8)  
 
 #### マイページには、あなたが過去に投稿した写真達が一覧で見やすく表示されています。
-[![Image from Gyazo](https://i.gyazo.com/5a9eeaff20850e5a27d8ebaa9b768958.gif)](https://gyazo.com/5a9eeaff20850e5a27d8ebaa9b768958)
+[![Image from Gyazo](https://i.gyazo.com/5a9eeaff20850e5a27d8ebaa9b768958.gif)](https://gyazo.com/5a9eeaff20850e5a27d8ebaa9b768958)  
 
 #### マイページから、あなたのフォロー/フォロワーを一覧で見ることができます。
-[![Image from Gyazo](https://i.gyazo.com/d3fb3f9505741305e8a696b5260e82b3.gif)](https://gyazo.com/d3fb3f9505741305e8a696b5260e82b3)
+[![Image from Gyazo](https://i.gyazo.com/d3fb3f9505741305e8a696b5260e82b3.gif)](https://gyazo.com/d3fb3f9505741305e8a696b5260e82b3)  
 
 #### フォローしたいユーザーを見つけた時、ユーザページからワンクリックでフォローすることができます。
 #### トップバーにある検索ボックスから、世界中のユーザーをす検索することが可能です。
-[![Image from Gyazo](https://i.gyazo.com/d751f1c66c8768eb12c89e08292f2d8f.gif)](https://gyazo.com/d751f1c66c8768eb12c89e08292f2d8f)
+[![Image from Gyazo](https://i.gyazo.com/d751f1c66c8768eb12c89e08292f2d8f.gif)](https://gyazo.com/d751f1c66c8768eb12c89e08292f2d8f)  
 
 #### いいねした投稿ページでは、そのユーザーがどんな投稿をいいねしているのか見ることができます。
-[![Image from Gyazo](https://i.gyazo.com/29682d4e87daa9886e2ff2689b5a5437.gif)](https://gyazo.com/29682d4e87daa9886e2ff2689b5a5437)
+[![Image from Gyazo](https://i.gyazo.com/29682d4e87daa9886e2ff2689b5a5437.gif)](https://gyazo.com/29682d4e87daa9886e2ff2689b5a5437)  
 
 #### 投稿の詳細ページから、コメントを残すことが可能です。
-[![Image from Gyazo](https://i.gyazo.com/27e1daebcfaaac4154fe1b9524b6479e.gif)](https://gyazo.com/27e1daebcfaaac4154fe1b9524b6479e)
+[![Image from Gyazo](https://i.gyazo.com/27e1daebcfaaac4154fe1b9524b6479e.gif)](https://gyazo.com/27e1daebcfaaac4154fe1b9524b6479e)  
 
 
 ## 開発環境
