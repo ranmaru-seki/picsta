@@ -31,7 +31,7 @@ class PostsController < ApplicationController
       flash[:notice] = "新しい投稿をしました"
       redirect_to root_path
     else
-      flash[:alert] = "投稿に失敗しました"
+      flash[:alert] = "画像を選択してください"
       render :new
     end
   end
