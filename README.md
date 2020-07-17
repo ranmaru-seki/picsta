@@ -42,13 +42,13 @@ follow your favorite users so your TimeLine only shows the photos of the users y
 - You can leave comments under photos.
 
 ## Development Environment
-Ruby 2.6.5
-Rails 5.2.4.3
-MySQL 14.14
-jQuery 1.12.4
+Ruby 2.6.5  
+Rails 5.2.4.3  
+MySQL 14.14  
+jQuery 1.12.4  
 
 ## Author
-Ranmaru Seki
+Ranmaru Seki  
 Mail to: m78.seki.ranmaru@gmail.com
 
 # 日本語
@@ -57,9 +57,9 @@ Mail to: m78.seki.ranmaru@gmail.com
 
 ## 概要
 InstaCloneはインスタグラムのクローンアプリです。Ruby、Ruby on Rails、jQuery、MySQLで書かれています。  
-このアプリには、ログイン/ログアウト機能、投稿一覧ページ、写真投稿機能、投稿削除機能、コメント機能、いいね機能、  
+このアプリには、ログイン/ログアウト機能、投稿一覧ページ、写真投稿機能、投稿削除機能、コメント機能、いいね機能、
 いいねした投稿ページ、ユーザーマイページ、フォロー/フォロー解除機能があります。  
-フォロー機能について、ユーザーページのフォローボタンを押すことで、そのユーザーをフォローすることができます。  
+ユーザーページにあるフォローボタンを押すことで、そのユーザーをフォローすることができます。  
 フォローを解除したい場合は、もう一度同じボタンを押すことでフォローを解除することができます。  
 あなたのタイムラインには、あなたがフォローしているユーザーの投稿のみが表示されます。
 
@@ -82,13 +82,13 @@ InstaCloneはインスタグラムのクローンアプリです。Ruby、Ruby o
 
 #### 投稿の詳細ページから、コメントを残すことが可能です。
 [![Image from Gyazo](https://i.gyazo.com/27e1daebcfaaac4154fe1b9524b6479e.gif)](https://gyazo.com/27e1daebcfaaac4154fe1b9524b6479e)
-  
+
 
 ## 開発環境
-Ruby 2.6.5
-Rails 5.2.4.3
-MySQL 14.14
-jQuery 1.12.4
+Ruby 2.6.5  
+Rails 5.2.4.3  
+MySQL 14.14  
+jQuery 1.12.4  
 
 ## 工夫したポイント
 - 多対多のアソシエーションを作成し、コメント機能を実装
