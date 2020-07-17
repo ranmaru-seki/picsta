@@ -28,8 +28,8 @@ Things you may want to cover:
 This app enables you to show your photos to the world.
 
 ## Description
-InstaClone is the Clone App of Instagram, written by Ruby, using Ruby on Rails, MySQL, jQuery.
-You can login/logout, post your photos, leave comments, like other user's photos, search users,
+InstaClone is the Clone App of Instagram, written by Ruby, using Ruby on Rails, MySQL, jQuery.  
+You can login/logout, post your photos, leave comments, like other user's photos, search users,  
 follow your favorite users so your TimeLine only shows the photos of the users you're following.
 
 ## Features / Demo
@@ -56,27 +56,33 @@ Mail to: m78.seki.ranmaru@gmail.com
 このアプリは、あなたが撮った写真を世界に公開するためのアプリです。
 
 ## 概要
-InstaCloneはインスタグラムのクローンアプリです。Ruby、Ruby on Rails、jQuery、MySQLで書かれています。
-このアプリには、ログイン/ログアウト機能、投稿一覧ページ、写真投稿機能、投稿削除機能、コメント機能、いいね機能、
-いいねした投稿ページ、ユーザーマイページ、フォロー/フォロー解除機能があります。
-フォロー機能について、ユーザーページのフォローボタンを押すことで、そのユーザーをフォローすることができます。
-フォローを解除したい場合は、もう一度同じボタンを押すことでフォローを解除することができます。
+InstaCloneはインスタグラムのクローンアプリです。Ruby、Ruby on Rails、jQuery、MySQLで書かれています。  
+このアプリには、ログイン/ログアウト機能、投稿一覧ページ、写真投稿機能、投稿削除機能、コメント機能、いいね機能、  
+いいねした投稿ページ、ユーザーマイページ、フォロー/フォロー解除機能があります。  
+フォロー機能について、ユーザーページのフォローボタンを押すことで、そのユーザーをフォローすることができます。  
+フォローを解除したい場合は、もう一度同じボタンを押すことでフォローを解除することができます。  
 あなたのタイムラインには、あなたがフォローしているユーザーの投稿のみが表示されます。
 
 ## 特徴
 #### あなたのタイムラインには、あなたがフォローしているユーザーの投稿のみを表示します。
 [![Image from Gyazo](https://i.gyazo.com/a214d27dec20cf88535ca7197d097ce8.gif)](https://gyazo.com/a214d27dec20cf88535ca7197d097ce8)
+
 #### マイページには、あなたが過去に投稿した写真達が一覧で見やすく表示されています。
 [![Image from Gyazo](https://i.gyazo.com/5a9eeaff20850e5a27d8ebaa9b768958.gif)](https://gyazo.com/5a9eeaff20850e5a27d8ebaa9b768958)
+
 #### マイページから、あなたのフォロー/フォロワーを一覧で見ることができます。
 [![Image from Gyazo](https://i.gyazo.com/d3fb3f9505741305e8a696b5260e82b3.gif)](https://gyazo.com/d3fb3f9505741305e8a696b5260e82b3)
+
 #### フォローしたいユーザーを見つけた時、ユーザページからワンクリックでフォローすることができます。
 #### トップバーにある検索ボックスから、世界中のユーザーをす検索することが可能です。
 [![Image from Gyazo](https://i.gyazo.com/d751f1c66c8768eb12c89e08292f2d8f.gif)](https://gyazo.com/d751f1c66c8768eb12c89e08292f2d8f)
+
 #### いいねした投稿ページでは、そのユーザーがどんな投稿をいいねしているのか見ることができます。
 [![Image from Gyazo](https://i.gyazo.com/29682d4e87daa9886e2ff2689b5a5437.gif)](https://gyazo.com/29682d4e87daa9886e2ff2689b5a5437)
+
 #### 投稿の詳細ページから、コメントを残すことが可能です。
 [![Image from Gyazo](https://i.gyazo.com/27e1daebcfaaac4154fe1b9524b6479e.gif)](https://gyazo.com/27e1daebcfaaac4154fe1b9524b6479e)
+  
 
 ## 開発環境
 Ruby 2.6.5
