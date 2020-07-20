@@ -1,6 +1,6 @@
 $(function(){
   function buildHTML(comment){
-    let html =
+    let haml =
       `<div class="PostInfo__yourComments-wrapper">
         <a href="/users/${comment.user_id}"><img src="${comment.image}" class="PostInfo__yourComments--image UserInfoShow-image"></a>
         <a class="PostInfo__yourComments--name UserInfoShow-name", href="/users/${comment.user_id}">${comment.user_name}</a>
@@ -8,7 +8,7 @@ $(function(){
           ${comment.content}
         </div>
       </div>`
-    return html
+    return haml
   }
   $('.Form').on('submit', function(e){
     e.preventDefault()
@@ -24,8 +24,8 @@ $(function(){
       contentType: false
     })
     .done(function(data) {
-      let html = buildHTML(data);
-      $('.PostInfo__yourComments').append(html);
+      let haml = buildHTML(data);
+      $('.PostInfo__yourComments').append(haml);
       $('.PostInfo__contents--area').val('');
       $('.PostInfo__yourComments').animate({ scrollTop: $('.PostInfo__yourComments')[0].scrollHeight});
       $('.PostInfo__contents--btn').prop("disabled", false);
