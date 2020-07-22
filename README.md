@@ -24,8 +24,7 @@ Things you may want to cover:
 * ...
 
 # English
-# InstaClone
-[![Image from Gyazo](https://i.gyazo.com/7d6e98e33d20135878b0645a7608fd5a.png)](https://gyazo.com/7d6e98e33d20135878b0645a7608fd5a)
+[![Image from Gyazo](https://i.gyazo.com/7d6e98e33d20135878b0645a7608fd5a.png)](https://gyazo.com/7d6e98e33d20135878b0645a7608fd5a)  
 This app enables you to show your photos to the world.
 
 ## Description
@@ -53,8 +52,7 @@ Ranmaru Seki
 Mail to: m78.seki.ranmaru@gmail.com
 
 # 日本語
-# InstaClone
-[![Image from Gyazo](https://i.gyazo.com/7d6e98e33d20135878b0645a7608fd5a.png)](https://gyazo.com/7d6e98e33d20135878b0645a7608fd5a)
+[![Image from Gyazo](https://i.gyazo.com/7d6e98e33d20135878b0645a7608fd5a.png)](https://gyazo.com/7d6e98e33d20135878b0645a7608fd5a)  
 このアプリは、あなたが撮った写真を世界に公開するためのアプリです。
 
 ## 概要
