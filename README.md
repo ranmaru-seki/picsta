@@ -25,6 +25,7 @@ Things you may want to cover:
 
 # English
 # InstaClone
+![ロゴ](images/logo.jpg "InstaClone")
 This app enables you to show your photos to the world.
 
 ## Description
@@ -101,6 +102,9 @@ jQuery 1.12.4
 - 画像を複数枚投稿する
 - 動画を投稿できるようにする
 - 通知機能をつける
+
+## 著者
+
 
 # DB設計
 ## users table
