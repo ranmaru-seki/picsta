@@ -24,7 +24,7 @@ Things you may want to cover:
 * ...
 
 # English
-[![Image from Gyazo](https://i.gyazo.com/7d6e98e33d20135878b0645a7608fd5a.png)](https://gyazo.com/7d6e98e33d20135878b0645a7608fd5a)  
+[![Image from Gyazo](https://i.gyazo.com/630323f5d97d5117b06ca8539a24b16e.png)](https://gyazo.com/630323f5d97d5117b06ca8539a24b16e)  
 This app enables you to show your photos to the world.
 
 ## Description
@@ -52,7 +52,7 @@ Ranmaru Seki
 Mail to: m78.seki.ranmaru@gmail.com
 
 # 日本語
-[![Image from Gyazo](https://i.gyazo.com/7d6e98e33d20135878b0645a7608fd5a.png)](https://gyazo.com/7d6e98e33d20135878b0645a7608fd5a)  
+[![Image from Gyazo](https://i.gyazo.com/630323f5d97d5117b06ca8539a24b16e.png)](https://gyazo.com/630323f5d97d5117b06ca8539a24b16e)  
 このアプリは、あなたが撮った写真を世界に公開するためのアプリです。
 
 ## 概要
