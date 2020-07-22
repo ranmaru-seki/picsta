@@ -50,6 +50,9 @@ jQuery 1.12.4
 ## Author
 Ranmaru Seki  
 Mail to: m78.seki.ranmaru@gmail.com
+<br />
+<br />
+<br />
 
 # 日本語
 [![Image from Gyazo](https://i.gyazo.com/630323f5d97d5117b06ca8539a24b16e.png)](https://gyazo.com/630323f5d97d5117b06ca8539a24b16e)  
