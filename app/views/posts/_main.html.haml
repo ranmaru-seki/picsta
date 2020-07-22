@@ -1,26 +1,32 @@
 .Main
   .MainContents
-    - @posts.each do |post|
-      .Post
-        .Post__user
-          = link_to (image_tag post.user.image.url, class: "Post__user--image"), user_path(post.user)
-          = link_to post.user.name, user_path(post.user), class: "Post__user--name"
-        = link_to (image_tag post.image.url, class: "Post__pic"), post_path(post)
+    - if @posts.size == 0
+      %p.none-follow-text
+        %span.FirstWelcome Welcome To InstaClone !!
+        %br
+        まずはフォローするユーザーを見つけましょう。検索欄からユーザー名で検索することができます。
+    - else
+      - @posts.each do |post|
+        .Post
+          .Post__user
+            = link_to (image_tag post.user.image.url, class: "Post__user--image"), user_path(post.user)
+            = link_to post.user.name, user_path(post.user), class: "Post__user--name"
+          = link_to (image_tag post.image.url, class: "Post__pic"), post_path(post)
 
-        .Post__icon
-          %div{id: "likes_buttons_#{post.id}"}
-            = render partial: 'likes/like', locals: { post: post}
+          .Post__icon
+            %div{id: "likes_buttons_#{post.id}"}
+              = render partial: 'likes/like', locals: { post: post}
 
-          = link_to post_path(post), class: "Post__icon--comment" do
-            = icon('far', 'comment')
-          .Comment-num
-            = post.comments.size
+            = link_to post_path(post), class: "Post__icon--comment" do
+              = icon('far', 'comment')
+            .Comment-num
+              = post.comments.size
 
-        .Post__text
-          = link_to user_path(post.user), class: "Comment__user" do
-            = post.user.name
-          .Comment__contens
-            = post.contents
-          .Post__created_at
-            = time_ago_in_words(post.created_at)
-            前
+          .Post__text
+            = link_to user_path(post.user), class: "Comment__user" do
+              = post.user.name
+            .Comment__contens
+              = post.contents
+            .Post__created_at
+              = time_ago_in_words(post.created_at)
+              前
