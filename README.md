@@ -47,6 +47,10 @@ Rails 5.2.4.3
 MySQL 14.14  
 jQuery 1.12.4  
 
+## Production environment
+InstaClone is deployed on AWS  
+IP:13.114.35.249
+
 ## Author
 Ranmaru Seki  
 Mail to: m78.seki.ranmaru@gmail.com
@@ -66,6 +70,16 @@ InstaCloneはインスタグラムのクローンアプリです。Ruby、Ruby o
 フォローを解除したい場合は、もう一度同じボタンを押すことでフォローを解除することができます。  
 あなたのタイムラインには、あなたがフォローしているユーザーの投稿のみが表示されます。
 
+## 開発環境
+Ruby 2.6.5  
+Rails 5.2.4.3  
+MySQL 14.14  
+jQuery 1.12.4  
+
+## 本番環境
+AWSを用いてデプロイ済み  
+IP：13.114.35.249
+
 ## 特徴
 ### あなたのタイムラインには、あなたがフォローしているユーザーの投稿のみを表示します。
 [![Image from Gyazo](https://i.gyazo.com/a214d27dec20cf88535ca7197d097ce8.gif)](https://gyazo.com/a214d27dec20cf88535ca7197d097ce8)  
@@ -74,11 +88,6 @@ InstaCloneはインスタグラムのクローンアプリです。Ruby、Ruby o
 
 ### マイページには、あなたが過去に投稿した写真達が一覧で見やすく表示されています。
 [![Image from Gyazo](https://i.gyazo.com/5a9eeaff20850e5a27d8ebaa9b768958.gif)](https://gyazo.com/5a9eeaff20850e5a27d8ebaa9b768958)  
-<br />
-<br />
-
-### マイページから、あなたのフォロー/フォロワーを一覧で見ることができます。
-[![Image from Gyazo](https://i.gyazo.com/d3fb3f9505741305e8a696b5260e82b3.gif)](https://gyazo.com/d3fb3f9505741305e8a696b5260e82b3)  
 <br />
 <br />
 
@@ -98,11 +107,6 @@ InstaCloneはインスタグラムのクローンアプリです。Ruby、Ruby o
 <br />
 <br />
 
-## 開発環境
-Ruby 2.6.5  
-Rails 5.2.4.3  
-MySQL 14.14  
-jQuery 1.12.4  
 
 ## 工夫したポイント
 - 多対多のアソシエーションを作成し、コメント機能を実装
