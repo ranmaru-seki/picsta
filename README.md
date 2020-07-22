@@ -103,7 +103,8 @@ jQuery 1.12.4
 - 通知機能をつける
 
 ## 著者
-
+関 嵐丸  
+E-Mail: m78.seki.ranmaru@gmail.com
 
 # DB設計
 ## users table
