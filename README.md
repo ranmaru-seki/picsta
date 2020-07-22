@@ -49,7 +49,7 @@ jQuery 1.12.4
 
 ## Production environment
 InstaClone is deployed on AWS  
-IP:13.114.35.249
+IP：13.114.35.249
 
 ## Author
 Ranmaru Seki  
@@ -77,7 +77,7 @@ MySQL 14.14
 jQuery 1.12.4  
 
 ## 本番環境
-AWSを用いてデプロイ済み  
+AWSを用いてデプロイ済み。  
 IP：13.114.35.249
 
 ## 特徴
@@ -105,8 +105,6 @@ IP：13.114.35.249
 ### 投稿の詳細ページから、コメントを残すことが可能です。
 [![Image from Gyazo](https://i.gyazo.com/27e1daebcfaaac4154fe1b9524b6479e.gif)](https://gyazo.com/27e1daebcfaaac4154fe1b9524b6479e)  
 <br />
-<br />
-
 
 ## 工夫したポイント
 - 多対多のアソシエーションを作成し、コメント機能を実装
