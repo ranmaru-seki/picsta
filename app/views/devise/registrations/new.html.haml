@@ -17,7 +17,8 @@
     .field
       = f.label :image, class: "registrationNew__image--label"
       %br/
-      = f.file_field :image, autofocus: true, autocomplete: "image", class: "registrationNew__image--form"
+      = f.file_field :image, autofocus: true, autocomplete: "image", class: "registrationNew__image--form", id: :input_user_image
+    %img#user_img_prev
     .field
       = f.label :password, class: "registrationNew__password--label"
       - if @minimum_password_length
