@@ -25,7 +25,7 @@ Things you may want to cover:
 
 # English
 # InstaClone
-![ロゴ](images/logo.jpg "InstaClone")
+![画像の説明](images/hero.png "hero")
 This app enables you to show your photos to the world.
 
 ## Description
