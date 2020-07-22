@@ -104,7 +104,6 @@ IP：13.114.35.249
 
 ### 投稿の詳細ページから、コメントを残すことが可能です。
 [![Image from Gyazo](https://i.gyazo.com/27e1daebcfaaac4154fe1b9524b6479e.gif)](https://gyazo.com/27e1daebcfaaac4154fe1b9524b6479e)  
-<br />
 
 ## 工夫したポイント
 - 多対多のアソシエーションを作成し、コメント機能を実装
