@@ -18,7 +18,7 @@
         = f.file_field :image, autofocus: true, autocomplete: "image", class: "UserEdit__field--input", id: :input_user_image
       %img#user_img_prev
       .UserEdit__field
-        = f.label :メールアドレス, class: "UserEdit__field--label"
+        = f.label :メールアドレス, class: "UserEdit__field--label UserEdit__field--labelMail"
         %br/
         = f.email_field :email, autofocus: true, autocomplete: "email", class: "UserEdit__field--input"
       - if devise_mapping.confirmable? && resource.pending_reconfirmation?
