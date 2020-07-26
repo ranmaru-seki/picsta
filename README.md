@@ -52,9 +52,9 @@ InstaClone is deployed on AWS
 IP：13.114.35.249
 
 ## Test
-- Login Account
-e-mail：ranma19.sar@gmail.com
-password：ranmaru0519
+- Login Account  
+e-mail：ranma19.sar@gmail.com  
+password：ranmaru0519  
 
 ## Author
 Ranmaru Seki  
@@ -111,7 +111,7 @@ IP：13.114.35.249
 [![Image from Gyazo](https://i.gyazo.com/27e1daebcfaaac4154fe1b9524b6479e.gif)](https://gyazo.com/27e1daebcfaaac4154fe1b9524b6479e)  
 
 ## テスト方法
-- ログインアカウント
+- ログインアカウント  
 メールアドレス：ranma19.sar@gamil.com  
 パスワード：ranmaru0519
 
