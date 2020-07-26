@@ -51,6 +51,11 @@ jQuery 1.12.4
 InstaClone is deployed on AWS  
 IP：13.114.35.249
 
+## Test
+- Login Account
+e-mail：ranma19.sar@gmail.com
+password：ranmaru0519
+
 ## Author
 Ranmaru Seki  
 Mail to: m78.seki.ranmaru@gmail.com
@@ -104,6 +109,11 @@ IP：13.114.35.249
 
 ### 投稿の詳細ページから、コメントを残すことが可能です。
 [![Image from Gyazo](https://i.gyazo.com/27e1daebcfaaac4154fe1b9524b6479e.gif)](https://gyazo.com/27e1daebcfaaac4154fe1b9524b6479e)  
+
+## テスト方法
+- ログインアカウント
+メールアドレス：ranma19.sar@gamil.com  
+パスワード：ranmaru0519
 
 ## 工夫したポイント
 - 多対多のアソシエーションを作成し、コメント機能を実装
