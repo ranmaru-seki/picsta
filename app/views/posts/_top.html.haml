@@ -5,8 +5,7 @@
     .topContents__search
       = form_with class: "Form", local: true do |f|
         = f.text_field :keyword, class: 'Form__inputName', placeholder: 'search by user name'
-        = button_tag type: 'submit', class: "Form__submit" do
-          = icon('fas', 'search')
+        = icon('fas', 'search')
         #overlay
         #modalWindow
           .modalWindow__result

@@ -37,13 +37,8 @@
         align-items: center;
         &____inputName {
         }
-        &__submit {
-          color: #808080;
-          font-size: 25px;
-        }
-        &__submit:hover {
-          color: #0080ff;
-          transition: 0.3s;
+        .fa-search {
+          font-size: 23px;
         }
       }
     }
