@@ -53,7 +53,7 @@ IP：13.114.35.249
 
 ## Test
 - Login Account  
-e-mail：m78.seki.ranmaru@gmail.com
+e-mail：m78.seki.ranmaru@gmail.com  
 password：ranmaru0519  
 
 ## Author
