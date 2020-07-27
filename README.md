@@ -53,7 +53,7 @@ IP：13.114.35.249
 
 ## Test
 - Login Account  
-e-mail：ranma19.sar@gmail.com  
+e-mail：m78.seki.ranmaru@gmail.com
 password：ranmaru0519  
 
 ## Author
@@ -112,7 +112,7 @@ IP：13.114.35.249
 
 ## テスト方法
 - ログインアカウント  
-メールアドレス：ranma19.sar@gamil.com  
+メールアドレス：m78.seki.ranmaru@gmail.com
 パスワード：ranmaru0519
 
 ## 工夫したポイント
