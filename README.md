@@ -111,7 +111,7 @@ IP：13.114.35.249
 [![Image from Gyazo](https://i.gyazo.com/27e1daebcfaaac4154fe1b9524b6479e.gif)](https://gyazo.com/27e1daebcfaaac4154fe1b9524b6479e)  
 
 ## テスト方法
-- ログインアカウント  
+- ログイン/テストアカウント  
 メールアドレス：m78.seki.ranmaru@gmail.com
 パスワード：ranmaru0519
 
